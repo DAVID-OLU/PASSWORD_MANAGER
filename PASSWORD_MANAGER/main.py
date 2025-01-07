@@ -45,11 +45,7 @@ find_button.grid(row=1, column=2)
 create_password = Button(text="Create Password", command=lambda: create_pass(password_data))
 create_password.grid(row=3, column=2)
 
-add_credentials = Button(text="Add Now", width=46, command=lambda: save_credential(website_name_entry.get(),
-                                                                                   email_info.get(),
-                                                                                   password_data.get(),
-                                                                                   website_name_entry, email_info,
-                                                                                   password_data))
+add_credentials = Button(window, text="Add Now", width=46, command=lambda: save_credential(website_name_entry, email_info, password_data))
 add_credentials.grid(row=4, column=1, columnspan=2)
 
 # -----------------
